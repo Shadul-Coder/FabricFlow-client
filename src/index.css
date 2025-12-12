@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #ae8844;
+  --color-secondary: #d0c2a5;
+  --color-heading: #976e30;
+  --bg-from: #f3ede3;
+  --bg-to: #fffaf3;
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  --color-primary: #c9a462;
+  --color-secondary: #b8a88c;
+  --color-heading: #d4b683;
+  --bg-from: #1a1712;
+  --bg-to: #2a241c;
+}
+
+body {
+  font-family: "Texturina", serif;
+  background: linear-gradient(to bottom right, var(--bg-from), var(--bg-to));
+  min-height: 100vh;
+}
