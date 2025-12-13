@@ -196,7 +196,7 @@ const DashboardLayout = () => {
             <li className="mt-auto">
               <button
                 onClick={handleLogout}
-                className="is-drawer-close:tooltip is-drawer-close:tooltip-right text-primary"
+                className="active:bg-secondary is-drawer-close:tooltip is-drawer-close:tooltip-right text-primary"
                 data-tip="Logout"
               >
                 <FaSignOutAlt className="my-1.5 inline-block size-4" />

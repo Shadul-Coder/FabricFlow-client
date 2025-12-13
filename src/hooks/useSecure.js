@@ -2,7 +2,7 @@ import axios from "axios";
 
 const axiosInstance = axios.create({
   baseURL: import.meta.env.VITE_server,
-  withCredentials: true, // This sends cookies automatically
+  withCredentials: true,
 });
 
 const useSecure = () => {

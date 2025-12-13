@@ -103,7 +103,7 @@ const Navbar = () => {
                     {user.photoURL ? (
                       <img
                         src={user.photoURL}
-                        alt={user.displayName || "User"}
+                        alt=""
                         className="h-full w-full object-cover"
                         crossOrigin="anonymous"
                       />
@@ -132,7 +132,7 @@ const Navbar = () => {
                         {user.photoURL ? (
                           <img
                             src={user.photoURL}
-                            alt={user.displayName || "User"}
+                            alt=""
                             className="h-full w-full object-cover"
                             crossOrigin="anonymous"
                           />
@@ -289,7 +289,7 @@ const Navbar = () => {
                 {user.photoURL ? (
                   <img
                     src={user.photoURL}
-                    alt={user.displayName || "User"}
+                    alt=""
                     className="h-full w-full object-cover"
                     crossOrigin="anonymous"
                   />
@@ -332,7 +332,7 @@ const Navbar = () => {
                     {user.photoURL ? (
                       <img
                         src={user.photoURL}
-                        alt={user.displayName || "User"}
+                        alt=""
                         className="h-full w-full object-cover"
                         crossOrigin="anonymous"
                       />

@@ -6,10 +6,10 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
 import Loading from "../../components/Loading/Loading";
-import useAxios from "../../hooks/useAxios";
+import useSecure from "../../hooks/useSecure";
 
 const Login = () => {
-  const axios = useAxios();
+  const axios = useSecure();
   const navigate = useNavigate();
   const { user, loading, googleSignIn, emailSignIn } = useAuth();
   const [showPass, setShowPass] = useState(false);

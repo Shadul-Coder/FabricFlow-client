@@ -5,11 +5,11 @@ import { FcGoogle } from "react-icons/fc";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
-import useAxios from "../../hooks/useAxios";
 import Loading from "../../components/Loading/Loading";
+import useSecure from "../../hooks/useSecure";
 
 const Register = () => {
-  const axios = useAxios();
+  const axios = useSecure();
   const navigate = useNavigate();
   const { user, loading, googleSignIn, emailRegister, update } = useAuth();
   const [showPass, setShowPass] = useState(false);
